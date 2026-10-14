@@ -1,0 +1,5 @@
+id,client,amount,status
+1,Acme,1200.50,unpaid
+2,Globex,300,paid
+3,Initech,450.25,UNPAID
+4,Umbrella,,unpaid
