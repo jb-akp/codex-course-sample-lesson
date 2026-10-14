@@ -24,7 +24,7 @@ ValueError: invalid literal for int() with base 10: '1200.50'
 **Try it**
 ```bash
 git log --oneline          # starter commit, then the Codex fix
-git show HEAD~1:invoices.py  # the buggy version
+git show $(git rev-list --max-parents=0 HEAD):invoices.py  # the buggy starter
 python invoices.py         # 1650.75
 pytest -q                  # 6 passed
 ```
